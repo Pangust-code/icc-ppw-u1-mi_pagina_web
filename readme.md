@@ -7,9 +7,9 @@
 
 **Asignatura:** Programación y Plataformas Web  
 **Unidad:** 1.2 – Estándares Web  
-**Estudiante:** Pablo Torres
-**Repositorio:** [https://github.com/PabloT18/icc-ppw-u1-miPrimeraPagina](https://github.com/PabloT18/icc-ppw-u1-miPrimeraPagina)  
-**Página desplegada (GitHub Pages):** [https://pablot18.github.io/icc-ppw-u1-miPrimeraPapina/](https://pablot18.github.io/icc-ppw-u1-miPrimeraPapina/)  
+**Estudiante:** Daniel Guanga
+**Repositorio:** [https://github.com/Pangust-code/icc-ppw-u1-mi_pagina_web](https://github.com/Pangust-code/icc-ppw-u1-mi_pagina_web)  
+**Página desplegada (GitHub Pages):** [https://pangust-code.github.io/icc-ppw-u1-mi_pagina_web/index](https://pangust-code.github.io/icc-ppw-u1-mi_pagina_web/index)  
 
 ---
 
