@@ -9,7 +9,7 @@
 **Unidad:** 1.2 – Estándares Web  
 **Estudiante:** Daniel Guanga
 **Repositorio:** [https://github.com/Pangust-code/icc-ppw-u1-mi_pagina_web](https://github.com/Pangust-code/icc-ppw-u1-mi_pagina_web)  
-**Página desplegada (GitHub Pages):** [https://pangust-code.github.io/icc-ppw-u1-mi_pagina_web/index](https://pangust-code.github.io/icc-ppw-u1-mi_pagina_web/index)  
+**Página desplegada (GitHub Pages):** [https://pangust-code.github.io/icc-ppw-u1-mi_pagina_web/](https://pangust-code.github.io/icc-ppw-u1-mi_pagina_web/)  
 
 ---
 
