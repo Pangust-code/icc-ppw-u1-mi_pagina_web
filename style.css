@@ -1,0 +1,57 @@
+
+        h1 {
+            color: black;
+        }
+
+        body {
+            background-color: darkturquoise;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: beige;
+            color: darkblue;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        section {
+            background-color: lightcyan;
+            padding: 5px;
+            margin: 10px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+
+        hr {
+            border: none;
+            background-color: black;
+            height: 1px;
+        }
+
+        footer {
+            background-color: beige;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 20px;
+        }
+
+        .btnCambiarImagen {
+            background-color: rgb(0, 138, 138);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }

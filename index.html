@@ -4,35 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estandares Web</title>
-    <style>
-        h1 {
-            color: darkblue;
-        }
-        body {
-            background-color: antiquewhite;
-        }
-        header {
-            background-color: beige;
-            padding: 10px;
-            text-align: center;
-            border-radius: 15px;
-            margin: 15px;
-        }
-        section {
-            background-color: bisque;
-            padding: 5px;
-            margin: 10px;
-            border-radius: 10px;
-            margin-bottom: 5px;
-            
-        }
-        hr {
-            border: none;
-            background-color: black;
-            height: 1px;
-            
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <header>
@@ -94,16 +67,20 @@
         <h3>&lt;figure&gt;</h3>
         <p>Se usa para colocar contenido visual o ilustrativo</p>
         <figure>
-            <img src="pokemon.jpg" alt="Pokemon">
-            <figcaption>Un pixel art de un paisaje de pokemon</figcaption>
+            <img src="pokemon.jpg" alt="Pokemon" wight="300px" height="200px" id="img">
+            <figcaption id="description">Un pixel art de un paisaje de Pokemon Esmeralda</figcaption>
         </figure>
+
+        <button id="btn" class="btnCambiarImagen" onclick="cambiarImagen()">Cambiar Imagen</button>
+
+        <script src="script.js"></script>
     </section>
 
     <footer>
         Daniel Guanga - Programacion y Plataformas Web
     </footer>
 
-    
+
 
 </body>
 </html>
