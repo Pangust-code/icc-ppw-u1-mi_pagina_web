@@ -52,15 +52,19 @@
     </section>
 
     <section>
-        <h3>&lt;nav&gt;</h3>
-        <p>Sirve para crear menús de navegación, son enlaces que llevan a otras
+        <h3 id="nomEtiqueta">&lt;nav&gt;</h3>
+        <p id="descEtiqueta">Sirve para crear menús de navegación, son enlaces que llevan a otras
             partes de tu pagina o sitio web.
         </p>
-        <nav>
+        <nav id="navegador">
             <a href="https://github.com/Pangust-code" target="_blank">Mi GitHub</a>
             <a href="https://www.youtube.com" target="_blank">Youtube</a>
             <a href="https://www.twitch.tv" target="_blank">Twitch</a>
         </nav>
+
+        <div id="contenedor" class="divContenedor"></div>
+
+        <button id="btn1" class="btnCambiarEtiqueta" onclick="cambiarEtiqueta()">Cambiar etiqueta</button>
 
         <hr>
 
@@ -71,7 +75,7 @@
             <figcaption id="description">Un pixel art de un paisaje de Pokemon Esmeralda</figcaption>
         </figure>
 
-        <button id="btn" class="btnCambiarImagen" onclick="cambiarImagen()">Cambiar Imagen</button>
+        <button id="btn2" class="btnCambiarImagen" onclick="cambiarImagen()">Cambiar Imagen</button>
 
         <script src="script.js"></script>
     </section>
