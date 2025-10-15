@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estandares Web</title>
+    <style>
+        h1 {
+            color: darkblue;
+        }
+        body {
+            background-color: antiquewhite;
+        }
+        header {
+            background-color: beige;
+            padding: 10px;
+            text-align: center;
+            border-radius: 15px;
+            margin: 15px;
+        }
+        section {
+            background-color: bisque;
+            padding: 5px;
+            margin: 10px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+            
+        }
+        hr {
+            border: none;
+            background-color: black;
+            height: 1px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Practica - Estandares Web</h1>
+        <h2>Estos estandares son HTML, CSS y JS, los cuales son las bases
+           fundamentales de cualquier pagina web moderna. Estos cumplen
+           una función específica y permiten que los sitios tengan estructura,
+           sea atractivo y funcional. 
+        </h2>
+    </header>
+
+    <section>
+        <table border="2">
+            <thead>
+            <tr>
+                <th>Lenguaje</th>
+                <th>Descripción</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML (HyperText Markup Language)</td>
+                    <td>Ayuda a definir el contenido y la estructura de la pagina web
+                        Es el esqueleto de la pagina, usa etiquetas (&lt;p&gt;, &lt;h1&gt;, &lt;a&gt;)
+                        y hace que los navegadores comprendan la información.
+                    </td>
+                </tr>
+                <tr>
+                    <td>CSS (Cascading Style Sheets)</td>
+                    <td>Da estilo y forma visual al contenido dado de HTML.
+                        Controla colores, tipografias, margenes, bordes, posiciones, etc.
+                        Ayuda a adaptar el diseño a distintos dispositivos.
+                    </td>
+                </tr>
+                <tr>
+                    <td>JS (Java Script)</td>
+                    <td>Sirve para añadir dinanimos y funcionalidad a la pagina.
+                        Permite interactividad con la pagina, controlas el contenido
+                        y los estilos en tiempo real (DOM), por ultimo se usa tambien para frameworks modernos.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3>&lt;nav&gt;</h3>
+        <p>Sirve para crear menús de navegación, son enlaces que llevan a otras
+            partes de tu pagina o sitio web.
+        </p>
+        <nav>
+            <a href="https://github.com/Pangust-code" target="_blank">Mi GitHub</a>
+            <a href="https://www.youtube.com" target="_blank">Youtube</a>
+            <a href="https://www.twitch.tv" target="_blank">Twitch</a>
+        </nav>
+
+        <hr>
+
+        <h3>&lt;figure&gt;</h3>
+        <p>Se usa para colocar contenido visual o ilustrativo</p>
+        <figure>
+            <img src="pokemon.jpg" alt="Pokemon">
+            <figcaption>Un pixel art de un paisaje de pokemon</figcaption>
+        </figure>
+    </section>
+
+    <footer>
+        Daniel Guanga - Programacion y Plataformas Web
+    </footer>
+
+</body>
+</html>
