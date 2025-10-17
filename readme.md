@@ -194,11 +194,11 @@ Los nuevos archivos se enlazaron dentro del documento `index.html` de la siguien
 
 | Elemento                    | Estilo implementado                                            | Descripción                             |
 | --------------------------- | -------------------------------------------------------------- | --------------------------------------- |
-| `body`                      | `background-color: antiquewhite;`                              | Personalizacion del cuerpo del html     |
-| `header`                    | `background-color: beige;`                                     | Personalizacion del encabezado del html |
-| `table`                     | `border-collapse: collapse;`                                   | Personalizacion de la tabla             |
+| `body`                      | `background-color: antiquewhite; margin: 0; padding: 0;`       | Personalizacion del cuerpo del html     |
+| `header`                    | `background-color: beige; color: darkblue; padding: 1rem 0; text-align: center;` | Personalizacion del encabezado del html |
+| `table`                     | `border-collapse: collapse; border = "2"`                      | Personalizacion de la tabla             |
 | `button`                    | `background-color: rgb(0, 138, 138); color: white; border: none; padding: 10px 20px; text-align: center text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 12px;`| Personalizacion de los botones|
-| `section`                   | `background-color: blanchedalmond;`                            | Personalizacion de la seccion html      |
+| `section`                   | `background-color: blanchedalmond; padding: 5px; margin: 10px; border-radius: 10px; margin-bottom: 5px; border: 1px solid black;`             | Personalizacion de la seccion html      |
 
 
 
