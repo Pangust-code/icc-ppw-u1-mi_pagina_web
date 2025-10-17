@@ -31,16 +31,29 @@
 | Etiqueta | Descripción | Implementación |
 |-----------|--------------|----------------|
 | `<figure>` | Contenedor para imagen con pie de foto | Logo HTML5 con `<figcaption>` |
-| `<progress>` | Barra de progreso de una tarea | Representa 70% completado |
+| `<nav>` | Crear menús de navegación | Enlaces que llevan a otras partes de tu pagina web |
+| `<div>` | Agrupa contenido en bloques | Da estilos y posiciona la pagina |
 
 **Código usado:**
 ```html
-<figure>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="Logo HTML5">
-  <figcaption>Logo de HTML5</figcaption>
-</figure>
+        <h3 id="nomEtiqueta">&lt;nav&gt;</h3>
+        <p id="descEtiqueta">Sirve para crear menús de navegación, son enlaces que llevan a otras
+            partes de tu pagina o sitio web.
+        </p>
+        <nav id="navegador">
+            <a href="https://github.com/Pangust-code" target="_blank">Mi GitHub</a>
+            <a href="https://www.youtube.com" target="_blank">Youtube</a>
+            <a href="https://www.twitch.tv" target="_blank">Twitch</a>
+        </nav>
 
-<progress value="70" max="100">70%</progress>
+        <div id="contenedor" class="divContenedor"></div>
+
+        <h3>&lt;figure&gt;</h3>
+        <p>Se usa para colocar contenido visual o ilustrativo</p>
+        <figure>
+            <img src="pokemon.jpg" alt="Pokemon" wight="300px" height="200px" id="img">
+            <figcaption id="description">Un pixel art de un paisaje de Pokemon Esmeralda</figcaption>
+        </figure>
 ```
 
 
@@ -78,13 +91,99 @@ Los nuevos archivos se enlazaron dentro del documento `index.html` de la siguien
 **En el `<head>` (para el CSS):**
 
 ```html
-COMLETAR
+    <header>
+        <h1>Practica - Estandares Web</h1>
+        <h2>Estos estandares son HTML, CSS y JS, los cuales son las bases
+           fundamentales de cualquier pagina web moderna. Estos cumplen
+           una función específica y permiten que los sitios tengan estructura,
+           sea atractivo y funcional. 
+        </h2>
+    </header>
 ```
 
 **Antes de cerrar el `<body>` (para el JavaScript):**
 
 ```html
-COMLETAR
+<body>
+    <header>
+        <h1>Practica - Estandares Web</h1>
+        <h2>Estos estandares son HTML, CSS y JS, los cuales son las bases
+           fundamentales de cualquier pagina web moderna. Estos cumplen
+           una función específica y permiten que los sitios tengan estructura,
+           sea atractivo y funcional. 
+        </h2>
+    </header>
+
+    <section>
+        <table border="2">
+            <thead>
+            <tr>
+                <th>Lenguaje</th>
+                <th>Descripción</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML (HyperText Markup Language)</td>
+                    <td>Ayuda a definir el contenido y la estructura de la pagina web
+                        Es el esqueleto de la pagina, usa etiquetas (&lt;p&gt;, &lt;h1&gt;, &lt;a&gt;)
+                        y hace que los navegadores comprendan la información.
+                    </td>
+                </tr>
+                <tr>
+                    <td>CSS (Cascading Style Sheets)</td>
+                    <td>Da estilo y forma visual al contenido dado de HTML.
+                        Controla colores, tipografias, margenes, bordes, posiciones, etc.
+                        Ayuda a adaptar el diseño a distintos dispositivos.
+                    </td>
+                </tr>
+                <tr>
+                    <td>JS (Java Script)</td>
+                    <td>Sirve para añadir dinanimos y funcionalidad a la pagina.
+                        Permite interactividad con la pagina, controlas el contenido
+                        y los estilos en tiempo real (DOM), por ultimo se usa tambien para frameworks modernos.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3 id="nomEtiqueta">&lt;nav&gt;</h3>
+        <p id="descEtiqueta">Sirve para crear menús de navegación, son enlaces que llevan a otras
+            partes de tu pagina o sitio web.
+        </p>
+        <nav id="navegador">
+            <a href="https://github.com/Pangust-code" target="_blank">Mi GitHub</a>
+            <a href="https://www.youtube.com" target="_blank">Youtube</a>
+            <a href="https://www.twitch.tv" target="_blank">Twitch</a>
+        </nav>
+
+        <div id="contenedor" class="divContenedor"></div>
+
+        <button id="btn1" class="btnCambiarEtiqueta" onclick="cambiarEtiqueta()">Cambiar etiqueta</button>
+
+        <hr>
+
+        <h3>&lt;figure&gt;</h3>
+        <p>Se usa para colocar contenido visual o ilustrativo</p>
+        <figure>
+            <img src="pokemon.jpg" alt="Pokemon" wight="300px" height="200px" id="img">
+            <figcaption id="description">Un pixel art de un paisaje de Pokemon Esmeralda</figcaption>
+        </figure>
+
+        <button id="btn2" class="btnCambiarImagen" onclick="cambiarImagen()">Cambiar Imagen</button>
+
+        <script src="script.js"></script>
+    </section>
+
+    <footer>
+        Daniel Guanga - Programacion y Plataformas Web
+    </footer>
+
+
+
+</body>
 ```
 
 ---
@@ -95,12 +194,12 @@ COMLETAR
 
 | Elemento                    | Estilo implementado                                            | Descripción                             |
 | --------------------------- | -------------------------------------------------------------- | --------------------------------------- |
-| `body`                      |         |         |
-| `header`                    | |
-| `table`                     |                              |                  |
-| `button`                    |                                   |   |
-| `section`                   |                                        |          |
-| `progress`                  | `accent-color: #007bff; width: 100%;`                          | Personalización de la barra de progreso |
+| `body`                      | `background-color: antiquewhite;` |`margin: 0;` | `padding: 0;`| Personalizacion del cuerpo del html|
+| `header`                    | `background-color: beige;` | `color: darkblue;` | `padding: 1rem 0;`| Personalizacion del encabezado del html|
+| `table`                     | `border-collapse: collapse;`| `border="2"`                     | Personalizacion de la tabla|
+| `button`                    | `background-color: rgb(0, 138, 138);` | `color: white;` | `border: none;` | Personalizacion de los botones|
+| `section`                   | `background-color: blanchedalmond;` | `padding: 5px;` |`margin: 10px;`| Personalizacion de la seccion html |
+
 
 
 **Ejemplo en el código:**
@@ -108,18 +207,18 @@ COMLETAR
 AGREGAR DOS EJEMPLOS DE SU CODIGO CSS
 
 ```css
-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 15px;
-  cursor: pointer;
-}
+        body {
+            background-color: antiquewhite;
+            margin: 0;
+            padding: 0;
+        }
 
-button:hover {
-  background-color: #0056b3;
-}
+        header {
+            background-color: beige;
+            color: darkblue;
+            padding: 1rem 0;
+            text-align: center;
+        }
 ```
 
 ---
@@ -128,26 +227,76 @@ button:hover {
 
 El archivo `script.js` incorpora dos acciones básicas:
 
-1. **Agregar una nueva fila a la tabla al presionar el botón**
+1. **Agregar contenido al div al presionar el botón**
 
    ```javascript
-   document.getElementById("agregarFila").addEventListener("click", () => {
-     const tabla = document.querySelector("table");
-     const nuevaFila = tabla.insertRow();
-     nuevaFila.innerHTML = "<td>&lt;article&gt;</td><td>Sección independiente del contenido</td>";
-   });
+  function cambiarEtiqueta() {
+    const contenedor = document.getElementById('contenedor');
+    const nomEtiqueta = document.getElementById('nomEtiqueta');
+    const descEtiqueta = document.getElementById('descEtiqueta');
+    const boton = document.getElementById('btn1');
+    const navegador = document.getElementById('navegador');
+
+    if (nomEtiqueta.textContent === '<nav>') {
+        nomEtiqueta.textContent = '<div>';
+        descEtiqueta.textContent = 'Sirve para agrupar contenido en bloques, puedes darle estilos y posicionarlo en la pagina.';
+        navegador.innerHTML = "";
+        contenedor.innerHTML = `<h2>Mis pasatiempos</h2>
+                                <p>Mi juego sandbox favorito es Terraria, me gusta explorar y derrotar a los variados jefes que tiene el juego.</p>
+                                <ul>
+                                    <li><a href="https://store.steampowered.com/app/105600/Terraria/?l=spanish" target="_blank">Terraria</a></li>
+                                </ul>
+                                <p>Mi musica favorita es el rock, una de mis bandas favoritas es Mago de Oz.</p>
+                                <ul>
+                                    <li><a href="https://www.youtube.com/channel/UC6nMOIbArzvza6npl0irIWw" target="_blank">Mago de Oz</a></li>
+                                    <li><a href="https://www.youtube.com/watch?v=5BiwcWDlW7k&list=RD5BiwcWDlW7k&start_radio=1" target="_blank">Mi cancion favorita de la banda</a></li>
+                                </ul>`;
+        contenedor.style.padding = "10px";
+        contenedor.style.border = "1px solid black";
+        contenedor.style.backgroundColor = "#ffffe0";
+        contenedor.style.borderRadius = "8px";
+    }else {
+         nomEtiqueta.textContent = '<nav>';
+         descEtiqueta.textContent = 'Sirve para crear menús de navegación, son enlaces que llevan a otras partes de tu pagina o sitio web.';
+         contenedor.innerHTML = "";
+         navegador.innerHTML = `<a href="https://github.com/Pangust-code" target="_blank">Mi GitHub</a>
+                                <a href="https://www.youtube.com" target="_blank">Youtube</a>
+                                <a href="https://www.twitch.tv" target="_blank">Twitch</a>`;
+        contenedor.style.padding = "0"; 
+        contenedor.style.border = "none";
+        contenedor.style.backgroundColor = "transparent";
+        contenedor.style.borderRadius = "0";
+    }
+
+    setTimeout(() => {
+        boton.style.backgroundColor = '#008b8b';
+    }, 100);
+  }
+
    ```
 
-2. **Cambiar el color del título al pasar el mouse por encima**
+2. **Cambiar la imagen al presionar el botón**
 
    ```javascript
-   const titulo = document.getElementById("titulo");
-   titulo.addEventListener("mouseover", () => {
-     titulo.style.color = "orange";
-   });
-   titulo.addEventListener("mouseout", () => {
-     titulo.style.color = "white";
-   });
+  function cambiarImagen() {
+    const imagen = document.getElementById('img');
+    const descripcion = document.getElementById('description');
+    const boton = document.getElementById('btn2');
+    if (imagen.src.includes('pokemon.jpg')) {
+        imagen.src = 'Zelda.gif'; 
+        imagen.alt = 'Zelda';
+        descripcion.textContent = 'Un gif pixel art de un paisaje de Zelda: Ocarina of Time';
+        boton.style.backgroundColor = '#add8e6';
+    } else {
+        imagen.src = 'pokemon.jpg'; 
+        imagen.alt = 'Pokemon';
+        descripcion.textContent = 'Un pixel art de un paisaje de Pokemon Esmeralda';
+        boton.style.backgroundColor = '#add8e6';
+    }
+    setTimeout(() => {
+        boton.style.backgroundColor = '#008b8b';
+    }, 100);
+  }
    ```
 
 
@@ -155,5 +304,6 @@ El archivo `script.js` incorpora dos acciones básicas:
 
 * Agregar su captura de pantalla del proyecto final funcionando en el navegador, de ambas versiones (sin y con CSS/JS)
 
-![alt text](<Captura de pantalla 2025-10-14 a la(s) 3.35.33 p. m..png>)
+![alt text]({C56A6732-8EC0-44BB-A004-408372AF9C40}.png)
+![alt text]({0BA9775A-3450-40CA-877F-1CD365365316}.png)
 
