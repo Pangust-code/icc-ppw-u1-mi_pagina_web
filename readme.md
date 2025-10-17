@@ -196,13 +196,15 @@ Los nuevos archivos se enlazaron dentro del documento `index.html` de la siguien
 | --------------------------- | -------------------------------------------------------------- | --------------------------------------- |
 | `body`                      | `background-color: antiquewhite; margin: 0; padding: 0;`       | Personalizacion del cuerpo del html     |
 | `header`                    | `background-color: beige; color: darkblue; padding: 1rem 0; text-align: center;` | Personalizacion del encabezado del html |
-| `table`                     | `border-collapse: collapse; border = "2"`                      | Personalizacion de la tabla             |
+| `table`                     | `border-collapse: collapse; border = "2";`                      | Personalizacion de la tabla             |
 | `button`                    | `background-color: rgb(0, 138, 138); color: white; border: none; padding: 10px 20px; text-align: center text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 12px;`| Personalizacion de los botones|
 | `section`                   | `background-color: blanchedalmond; padding: 5px; margin: 10px; border-radius: 10px; margin-bottom: 5px; border: 1px solid black;`             | Personalizacion de la seccion html      |
+| `hr`                        | `border: none; background-color: black; height: 1px;` | Personalizacion del separador|
+| `footer`                    | `background-color: beige; text-align: center; padding: 1rem 0; margin-top: 20px;` | Personalizacion del pie de pagina |
+| `h1`                        | `color: black;` | Personalizacion del titulo|
 
 
-
-**Ejemplo en el código:**
+**Ejemplo en el código:** 
 
 AGREGAR DOS EJEMPLOS DE SU CODIGO CSS
 
@@ -299,6 +301,23 @@ El archivo `script.js` incorpora dos acciones básicas:
   }
    ```
 
+3. **Cambiar color al titulo al presionar el botón**
+
+```javascript
+document.addEventListener("DOMContentLoaded", () => {
+    // Efecto al pasar el mouse por el título
+    const titulo = document.getElementById("titulo");
+    if (titulo) {
+        const originalColor = window.getComputedStyle(titulo).color;
+        titulo.addEventListener("mouseover", () => {
+            titulo.style.color = "rgb(119, 237, 16)";
+        });
+        titulo.addEventListener("mouseout", () => {
+            titulo.style.color = originalColor || "";
+        });
+    }
+});
+```
 
 ## Capturas de pantalla del proyecto final
 

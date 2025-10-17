@@ -60,3 +60,17 @@ function cambiarEtiqueta() {
         boton.style.backgroundColor = '#008b8b';
     }, 100);
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Efecto al pasar el mouse por el título
+    const titulo = document.getElementById("titulo");
+    if (titulo) {
+        const originalColor = window.getComputedStyle(titulo).color;
+        titulo.addEventListener("mouseover", () => {
+            titulo.style.color = "rgb(119, 237, 16)";
+        });
+        titulo.addEventListener("mouseout", () => {
+            titulo.style.color = originalColor || "";
+        });
+    }
+});
