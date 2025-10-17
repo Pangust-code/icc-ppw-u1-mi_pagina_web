@@ -194,11 +194,11 @@ Los nuevos archivos se enlazaron dentro del documento `index.html` de la siguien
 
 | Elemento                    | Estilo implementado                                            | Descripción                             |
 | --------------------------- | -------------------------------------------------------------- | --------------------------------------- |
-| `body`                      | `background-color: antiquewhite;` |`margin: 0;` | `padding: 0;`| Personalizacion del cuerpo del html|
-| `header`                    | `background-color: beige;` | `color: darkblue;` | `padding: 1rem 0;`| Personalizacion del encabezado del html|
-| `table`                     | `border-collapse: collapse;`| `border="2"`                     | Personalizacion de la tabla|
-| `button`                    | `background-color: rgb(0, 138, 138);` | `color: white;` | `border: none;` | Personalizacion de los botones|
-| `section`                   | `background-color: blanchedalmond;` | `padding: 5px;` |`margin: 10px;`| Personalizacion de la seccion html |
+| `body`                      | `background-color: antiquewhite;`                              | Personalizacion del cuerpo del html     |
+| `header`                    | `background-color: beige;`                                     | Personalizacion del encabezado del html |
+| `table`                     | `border-collapse: collapse;`                                   | Personalizacion de la tabla             |
+| `button`                    | `background-color: rgb(0, 138, 138); color: white; border: none; padding: 10px 20px; text-align: center text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 12px;`| Personalizacion de los botones|
+| `section`                   | `background-color: blanchedalmond;`                            | Personalizacion de la seccion html      |
 
 
 
@@ -230,50 +230,50 @@ El archivo `script.js` incorpora dos acciones básicas:
 1. **Agregar contenido al div al presionar el botón**
 
    ```javascript
-  function cambiarEtiqueta() {
-    const contenedor = document.getElementById('contenedor');
-    const nomEtiqueta = document.getElementById('nomEtiqueta');
-    const descEtiqueta = document.getElementById('descEtiqueta');
-    const boton = document.getElementById('btn1');
-    const navegador = document.getElementById('navegador');
+    function cambiarEtiqueta() {
+        const contenedor = document.getElementById('contenedor');
+        const nomEtiqueta = document.getElementById('nomEtiqueta');
+        const descEtiqueta = document.getElementById('descEtiqueta');
+        const boton = document.getElementById('btn1');
+        const navegador = document.getElementById('navegador');
 
-    if (nomEtiqueta.textContent === '<nav>') {
-        nomEtiqueta.textContent = '<div>';
-        descEtiqueta.textContent = 'Sirve para agrupar contenido en bloques, puedes darle estilos y posicionarlo en la pagina.';
-        navegador.innerHTML = "";
-        contenedor.innerHTML = `<h2>Mis pasatiempos</h2>
-                                <p>Mi juego sandbox favorito es Terraria, me gusta explorar y derrotar a los variados jefes que tiene el juego.</p>
-                                <ul>
-                                    <li><a href="https://store.steampowered.com/app/105600/Terraria/?l=spanish" target="_blank">Terraria</a></li>
-                                </ul>
-                                <p>Mi musica favorita es el rock, una de mis bandas favoritas es Mago de Oz.</p>
-                                <ul>
-                                    <li><a href="https://www.youtube.com/channel/UC6nMOIbArzvza6npl0irIWw" target="_blank">Mago de Oz</a></li>
-                                    <li><a href="https://www.youtube.com/watch?v=5BiwcWDlW7k&list=RD5BiwcWDlW7k&start_radio=1" target="_blank">Mi cancion favorita de la banda</a></li>
-                                </ul>`;
-        contenedor.style.padding = "10px";
-        contenedor.style.border = "1px solid black";
-        contenedor.style.backgroundColor = "#ffffe0";
-        contenedor.style.borderRadius = "8px";
-    }else {
-         nomEtiqueta.textContent = '<nav>';
-         descEtiqueta.textContent = 'Sirve para crear menús de navegación, son enlaces que llevan a otras partes de tu pagina o sitio web.';
-         contenedor.innerHTML = "";
-         navegador.innerHTML = `<a href="https://github.com/Pangust-code" target="_blank">Mi GitHub</a>
-                                <a href="https://www.youtube.com" target="_blank">Youtube</a>
-                                <a href="https://www.twitch.tv" target="_blank">Twitch</a>`;
-        contenedor.style.padding = "0"; 
-        contenedor.style.border = "none";
-        contenedor.style.backgroundColor = "transparent";
-        contenedor.style.borderRadius = "0";
-    }
+        if (nomEtiqueta.textContent === '<nav>') {
+            nomEtiqueta.textContent = '<div>';
+            descEtiqueta.textContent = 'Sirve para agrupar contenido en bloques, puedes darle estilos y posicionarlo en la pagina.';
+            navegador.innerHTML = "";
+            contenedor.innerHTML = `<h2>Mis pasatiempos</h2>
+                                    <p>Mi juego sandbox favorito es Terraria, me gusta explorar y derrotar a los variados jefes que tiene el juego.</p>
+                                    <ul>
+                                        <li><a href="https://store.steampowered.com/app/105600/Terraria/?l=spanish" target="_blank">Terraria</a></li>
+                                    </ul>
+                                    <p>Mi musica favorita es el rock, una de mis bandas favoritas es Mago de Oz.</p>
+                                    <ul>
+                                        <li><a href="https://www.youtube.com/channel/UC6nMOIbArzvza6npl0irIWw" target="_blank">Mago de Oz</a></li>
+                                        <li><a href="https://www.youtube.com/watch?v=5BiwcWDlW7k&list=RD5BiwcWDlW7k&start_radio=1" target="_blank">Mi cancion favorita de la banda</a></li>
+                                    </ul>`;
+            contenedor.style.padding = "10px";
+            contenedor.style.border = "1px solid black";
+            contenedor.style.backgroundColor = "#ffffe0";
+            contenedor.style.borderRadius = "8px";
+        }else {
+            nomEtiqueta.textContent = '<nav>';
+            descEtiqueta.textContent = 'Sirve para crear menús de navegación, son enlaces que llevan a otras partes de tu pagina o sitio web.';
+            contenedor.innerHTML = "";
+            navegador.innerHTML = `<a href="https://github.com/Pangust-code" target="_blank">Mi GitHub</a>
+                                    <a href="https://www.youtube.com" target="_blank">Youtube</a>
+                                    <a href="https://www.twitch.tv" target="_blank">Twitch</a>`;
+            contenedor.style.padding = "0"; 
+            contenedor.style.border = "none";
+            contenedor.style.backgroundColor = "transparent";
+            contenedor.style.borderRadius = "0";
+        }
 
-    setTimeout(() => {
-        boton.style.backgroundColor = '#008b8b';
-    }, 100);
+        setTimeout(() => {
+            boton.style.backgroundColor = '#008b8b';
+        }, 100);
   }
 
-   ```
+  ```
 
 2. **Cambiar la imagen al presionar el botón**
 
